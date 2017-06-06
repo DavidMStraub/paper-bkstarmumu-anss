@@ -5,78 +5,79 @@ from flavio.statistics.fits import FastFit
 # (no double-counting) because ATLAS and LHCb use different bins.
 
 observables = [
- ('<FL>(B0->K*mumu)', 0.04, 2), #ATLAS 17
- ('<FL>(B0->K*mumu)', 2, 4), #ATLAS 17
- ('<FL>(B0->K*mumu)', 4, 6), #LHCb 15  #ATLAS 17
- ('<FL>(B0->K*mumu)', 0, 2), #CDF
- ('<FL>(B0->K*mumu)', 1, 2), #CMS 15
- ('<FL>(B0->K*mumu)', 2, 4.3), #CMS 15, CDF
- ('<FL>(B0->K*mumu)', 4.3, 6), #CMS 15
- ('<FL>(B0->K*mumu)', 1.1, 2.5), #LHCb 15
- ('<FL>(B0->K*mumu)', 2.5, 4), #LHCb 15
- ('<FL>(B0->K*mumu)', 15, 19), #LHCb 15
+ ('<FL>(B0->K*mumu)', 0.04, 2),
+ ('<FL>(B0->K*mumu)', 2, 4),
+ ('<FL>(B0->K*mumu)', 4, 6),
+ ('<FL>(B0->K*mumu)', 0, 2),
+ ('<FL>(B0->K*mumu)', 1, 2),
+ ('<FL>(B0->K*mumu)', 2, 4.3),
+ ('<FL>(B0->K*mumu)', 4.3, 6),
+ ('<FL>(B0->K*mumu)', 1.1, 2.5),
+ ('<FL>(B0->K*mumu)', 2.5, 4),
+ ('<FL>(B0->K*mumu)', 15, 19),
  ('<FL>(Bs->phimumu)', 2.0, 5.0),
  ('<FL>(Bs->phimumu)', 15.0, 19.0),
 
- ('<P1>(B0->K*mumu)', 0.04, 2), #ATLAS 17
- ('<P1>(B0->K*mumu)', 2, 4), #ATLAS 17
- ('<P1>(B0->K*mumu)', 4, 6), #ATLAS 17
- ('<P1>(B0->K*mumu)', 1, 2), #CMS 17
- ('<P1>(B0->K*mumu)', 2, 4.3), #CMS 17
- ('<P1>(B0->K*mumu)', 4.3, 6), #CMS 17
+ ('<P1>(B0->K*mumu)', 0.04, 2),
+ ('<P1>(B0->K*mumu)', 2, 4),
+ ('<P1>(B0->K*mumu)', 4, 6),
+ ('<P1>(B0->K*mumu)', 1, 2),
+ ('<P1>(B0->K*mumu)', 2, 4.3),
+ ('<P1>(B0->K*mumu)', 4.3, 6),
 
- ('<P4p>(B0->K*mumu)', 0.04, 2), #ATLAS 17
- ('<P4p>(B0->K*mumu)', 2, 4), #ATLAS 17
- ('<P4p>(B0->K*mumu)', 4, 6), #ATLAS 17
+ ('<P4p>(B0->K*mumu)', 0.04, 2),
+ ('<P4p>(B0->K*mumu)', 2, 4),
+ ('<P4p>(B0->K*mumu)', 4, 6),
 
- ('<P5p>(B0->K*mumu)', 0.04, 2), #ATLAS 17
- ('<P5p>(B0->K*mumu)', 2, 4), #ATLAS 17
- ('<P5p>(B0->K*mumu)', 4, 6), #ATLAS 17
- ('<P5p>(B0->K*mumu)', 1, 2), #CMS 17
- ('<P5p>(B0->K*mumu)', 2, 4.3), #CMS 17
- ('<P5p>(B0->K*mumu)', 4.3, 6), #CMS 17
+ ('<P5p>(B0->K*mumu)', 0.04, 2),
+ ('<P5p>(B0->K*mumu)', 2, 4),
+ ('<P5p>(B0->K*mumu)', 4, 6),
+ ('<P5p>(B0->K*mumu)', 1, 2),
+ ('<P5p>(B0->K*mumu)', 2, 4.3),
+ ('<P5p>(B0->K*mumu)', 4.3, 6),
 
  ('<AFB>(B0->K*mumu)', 1.1, 2.5),
  ('<AFB>(B0->K*mumu)', 2.5, 4),
- ('<AFB>(B0->K*mumu)', 4.3, 6), # CMS
+ ('<AFB>(B0->K*mumu)', 4.3, 6),
  ('<AFB>(B0->K*mumu)', 4, 6),
  ('<AFB>(B0->K*mumu)', 15, 19),
- ('<AFB>(B0->K*mumu)', 0, 2), #CDF
- ('<AFB>(B0->K*mumu)', 2, 4.3), #CDF
- ('<AFB>(B0->K*mumu)', 1, 2), # CMS
+ ('<AFB>(B0->K*mumu)', 0, 2),
+ ('<AFB>(B0->K*mumu)', 2, 4.3),
+ ('<AFB>(B0->K*mumu)', 1, 2),
 
- ('<S3>(B0->K*mumu)', 1.1, 2.5), #LHCb 15
- ('<S3>(B0->K*mumu)', 2.5, 4), #LHCb 15
- ('<S3>(B0->K*mumu)', 4, 6), #LHCb 15
- ('<S3>(B0->K*mumu)', 15, 19), #LHCb 15
+ ('<S3>(B0->K*mumu)', 1.1, 2.5),
+ ('<S3>(B0->K*mumu)', 2.5, 4),
+ ('<S3>(B0->K*mumu)', 4, 6),
+ ('<S3>(B0->K*mumu)', 15, 19),
  ('<S3>(Bs->phimumu)', 2.0, 5.0),
  ('<S3>(Bs->phimumu)', 15.0, 19.0),
 
- ('<S4>(B0->K*mumu)', 1.1, 2.5), #LHCb 15
- ('<S4>(B0->K*mumu)', 2.5, 4), #LHCb 15
- ('<S4>(B0->K*mumu)', 4, 6), #LHCb 15
- ('<S4>(B0->K*mumu)', 15, 19), #LHCb 15
+ ('<S4>(B0->K*mumu)', 1.1, 2.5),
+ ('<S4>(B0->K*mumu)', 2.5, 4),
+ ('<S4>(B0->K*mumu)', 4, 6),
+ ('<S4>(B0->K*mumu)', 15, 19),
  ('<S4>(Bs->phimumu)', 2.0, 5.0),
  ('<S4>(Bs->phimumu)', 15.0, 19.0),
 
- ('<S5>(B0->K*mumu)', 1.1, 2.5), #LHCb 15
- ('<S5>(B0->K*mumu)', 2.5, 4), #LHCb 15
- ('<S5>(B0->K*mumu)', 4, 6), #LHCb 15
- ('<S5>(B0->K*mumu)', 15, 19), #LHCb 15
+ ('<S5>(B0->K*mumu)', 1.1, 2.5),
+ ('<S5>(B0->K*mumu)', 2.5, 4),
+ ('<S5>(B0->K*mumu)', 4, 6),
+ ('<S5>(B0->K*mumu)', 15, 19),
 
  ('<dBR/dq2>(B+->K*mumu)', 2.0, 4.0),
  ('<dBR/dq2>(B+->K*mumu)', 4.0, 6.0),
  ('<dBR/dq2>(B+->K*mumu)', 15.0, 19.0),
- ('<dBR/dq2>(B+->K*mumu)', 0, 2), # CDF, CMS
- ('<dBR/dq2>(B+->K*mumu)', 2, 4.3), # CDF, CMS
+ ('<dBR/dq2>(B+->K*mumu)', 0, 2),
+ ('<dBR/dq2>(B+->K*mumu)', 2, 4.3),
 
- ('<dBR/dq2>(B0->K*mumu)', 1, 2), # CMS
+ ('<dBR/dq2>(B0->K*mumu)', 1, 2),
  ('<dBR/dq2>(B0->K*mumu)', 1.1, 2.5),
  ('<dBR/dq2>(B0->K*mumu)', 2.5, 4.0),
  ('<dBR/dq2>(B0->K*mumu)', 4.0, 6.0),
  ('<dBR/dq2>(B0->K*mumu)', 15.0, 19.0),
- ('<dBR/dq2>(B0->K*mumu)', 0, 2), # CDF, CMS
- ('<dBR/dq2>(B0->K*mumu)', 2, 4.3), # CDF, CMS
+ ('<dBR/dq2>(B0->K*mumu)', 0, 2),
+ ('<dBR/dq2>(B0->K*mumu)', 2, 4.3),
+ ('<dBR/dq2>(B0->K*mumu)', 4.3, 6),
 
  ('<dBR/dq2>(Bs->phimumu)', 1.0, 6.0),
  ('<dBR/dq2>(Bs->phimumu)', 15.0, 19.0),
@@ -87,14 +88,14 @@ observables = [
  ('<dBR/dq2>(B+->Kmumu)', 4.0, 5.0),
  ('<dBR/dq2>(B+->Kmumu)', 5.0, 6.0),
  ('<dBR/dq2>(B+->Kmumu)', 15.0, 22.0),
- ('<dBR/dq2>(B+->Kmumu)', 0, 2), # CDF, CMS
- ('<dBR/dq2>(B+->Kmumu)', 2, 4.3), # CDF, CMS
+ ('<dBR/dq2>(B+->Kmumu)', 0, 2),
+ ('<dBR/dq2>(B+->Kmumu)', 2, 4.3),
 
  ('<dBR/dq2>(B0->Kmumu)', 2.0, 4.0),
  ('<dBR/dq2>(B0->Kmumu)', 4.0, 6.0),
  ('<dBR/dq2>(B0->Kmumu)', 15.0, 22.0),
- ('<dBR/dq2>(B0->Kmumu)', 0, 2), # CDF, CMS
- ('<dBR/dq2>(B0->Kmumu)', 2, 4.3), # CDF, CMS
+ ('<dBR/dq2>(B0->Kmumu)', 0, 2),
+ ('<dBR/dq2>(B0->Kmumu)', 2, 4.3),
 
  ('<BR>(B->Xsmumu)', 1.0, 6.0),
  ('<BR>(B->Xsmumu)', 14.2, 25.0),
@@ -107,8 +108,8 @@ measurements = [
  'ATLAS B->K*mumu 2017 P4p',
  'ATLAS B->K*mumu 2017 P5p',
 
- 'CMS B->K*mumu 2013',
- 'CMS B->K*mumu 2015',
+ 'CMS B->K*mumu 2013 combined with 2015',
+ 'CMS B->K*mumu 2015 4.3-6',
  'CMS B->K*mumu 2017 P1',
  'CMS B->K*mumu 2017 P5p',
 
