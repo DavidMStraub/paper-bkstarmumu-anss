@@ -109,6 +109,7 @@ measurements = [
  'ATLAS B->K*mumu 2017 P5p',
 
  'CMS B->K*mumu 2013 combined with 2015',
+ 'CMS B->K*mumu 2013 combined with 2015 BR',
  'CMS B->K*mumu 2015 4.3-6',
  'CMS B->K*mumu 2017 P1',
  'CMS B->K*mumu 2017 P5p',
